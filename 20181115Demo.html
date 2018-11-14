@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+<body onload="loadFunction()">
+
+<p>導入連結: <input type="text" name="fb_url" id="fb_url" value="" style="width: 500px;">&nbsp&nbsp&nbsp<input type="button" id="btn_link" value="導入上架""></p>
+
+<div id="div1" style="display: none;">
+	商品名稱：2018秋冬新款歐美爆款性感露肩綁帶喇叭袖針織上衣<br>
+	商品價格：NT$ 430<br>
+	商品圖片：<br><img src='https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/45638250_313292006069373_8538199821134069760_n.jpg?_nc_cat=109&_nc_ht=scontent.ftpe7-4.fna&oh=b92f52b0221ec3dd6a1c1387abcc3720&oe=5C89394B'/>
+
+</div>
+<div id="div2" style="display: none;">
+	商品名稱：長袖pu皮衣外套拼接網紗連衣裙假兩件裙子<br>
+	商品價格：NT$ 1<br>
+	商品圖片：<br><img src='https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/45485979_2104269933221321_1966083092913324032_n.jpg?_nc_cat=111&_nc_ht=scontent.ftpe7-3.fna&oh=30a4f9fb109fe4170fe7212d303247d0&oe=5C85C6C9'/>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){		
+
+		$('#btn_link').click(function(){
+
+		
+			var tmp = $('#fb_url').val();
+			if(tmp == 'https://www.facebook.com/marketplace/item/1903300179758936/')
+			{
+				$("#div1").show();
+				$("#div2").hide();
+			}else if(tmp == 'https://www.facebook.com/marketplace/item/956296654556232/')
+			{
+				$("#div1").hide();
+				$("#div2").show();
+				
+			}
+			
+
+		});
+		
+	});
+</script>
+</body>
+</html>
